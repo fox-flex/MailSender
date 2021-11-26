@@ -1,3 +1,5 @@
+package example;
+
 public enum Planet {
     MERCURY(3.303e+23, 2.4397e6),
     VENUS(4.869e+24, 6.0518e6),
@@ -37,7 +39,7 @@ public enum Planet {
 
     public static void main(String[] args) {
         if (args.length != 1) {
-            System.err.println("Usage: java Planet <earth_weight>");
+            System.err.println("Usage: java example.Planet <earth_weight>");
             System.exit(-1);
         }
         double earthWeight = Double.parseDouble(args[0]);
